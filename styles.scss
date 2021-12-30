@@ -1,3 +1,3 @@
-@use "base"
-body, main { @include bgcolor(
-	$background: 
+@use '_base' as *;
+body{ @include bgcolor($background: $Very-dark-blue, $color: default);
+height: 100vh; }
