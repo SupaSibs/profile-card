@@ -13,13 +13,18 @@ main {
   grid-template: 100vh/auto;
   justify-content: center;
   align-items: center;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 30%;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 65%;
+  border-radius: 10px;
+  min-height: auto;
   background: white;
   color: default;
 }
@@ -32,8 +37,13 @@ main {
   align-items: center;
 }
 
+img {
+  border-radius: 10px 10px 0 0;
+}
+
 .badge {
   border-radius: 50%;
+  border: solid white 5px;
   max-height: 100%;
   height: auto;
   max-width: 33%;

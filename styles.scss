@@ -1,39 +1,58 @@
 @use '_base' as *;
-html {font-family: "Kumbh Sans"}
-
-body, %body{ @include bgcolor($Dark-cyan, default);
-height: 100vh; }
-
-main { @extend %body; 
-@include grid(auto, 100vh, center, center); }
-
-.flex { display:flex;
+html {
+font-family: "Kumbh Sans"
+}
+body, %body {
+@include bgcolor($Dark-cyan, default);
+height: 100vh; 
+}
+main {
+@extend %body; 
+@include grid(auto, 100vh, center, center);
+background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);;
+background-repeat: no-repeat, no-repeat;
+background-position: top left, bottom right;
+background-size: 30%;
+}
+.flex {
+display:flex;
 flex-direction: column;
 align-items: center;
-min-height: 65%;
-@include bgcolor(white, default); }
-
-.content { position: relative;
+border-radius: 10px;
+min-height: auto;
+@include bgcolor(white, default);
+}
+.content { 
+position: relative;
 padding-top: 30px;
 display:flex;
 flex-direction: column;
-align-items: center;}
-
-.badge { border-radius: 50%; 
+align-items: center;
+}
+img {
+border-radius: 10px 10px 0 0;
+}
+.badge {
+border-radius: 50%; 
+border: solid white 5px;
 max-height: 100%; height: auto;
 max-width: 33%; width: auto;
 position: absolute; top: -20%;
-left: 35; }
-
-p { font-weight: 700; }
-
-.gray { color: $Dark-gray;
-font-weight: 400;}
-
-span { margin: 10px }
-
-.lessmargin { margin: 5px; }
-
+left: 35;
+}
+p {
+font-weight: 700; 
+}
+.gray { 
+color: $Dark-gray;
+font-weight: 400;
+}
+span {
+margin: 10px
+}
+.lessmargin { 
+margin: 5px;
+}
 
 
 
