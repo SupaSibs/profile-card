@@ -1,7 +1,63 @@
-body {
-  background: #2d3248;
+html {
+  font-family: "Kumbh Sans";
+}
+
+body, main {
+  background: #19a2ae;
   color: default;
   height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template: 100vh/auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 65%;
+  background: white;
+  color: default;
+}
+
+.content {
+  position: relative;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  border-radius: 50%;
+  max-height: 100%;
+  height: auto;
+  max-width: 33%;
+  width: auto;
+  position: absolute;
+  top: -20%;
+  left: 35;
+}
+
+p {
+  font-weight: 700;
+}
+
+.gray {
+  color: #969696;
+  font-weight: 400;
+}
+
+span {
+  margin: 10px;
+}
+
+.lessmargin {
+  margin: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
