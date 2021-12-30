@@ -1,0 +1,3 @@
+@use "base"
+body, main { @include bgcolor(
+	$background: 
